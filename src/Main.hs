@@ -1,5 +1,8 @@
 module Main where
+import ContactManager
 
 main :: IO ()
 main = do
-  putStrLn "hello world"
+    instance ContaceManager where
+       getContact = getContact
+     putStrLn "hello world"
