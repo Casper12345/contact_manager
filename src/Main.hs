@@ -9,5 +9,7 @@ main = do
   putStrLn "hello world"
 
 
-instance ContactManager ManagerImpl where
-    createContact x = ManagerImpl x
+fun = do
+    instance ContactManager ManagerImpl where
+         createContact x = ManagerImpl x
+          getContact = getContact
