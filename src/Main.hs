@@ -13,9 +13,6 @@ main = do
   let contacts3 = addContact c2 contacts2
   let contacts4 = addContact c3 contacts3
   saveContacts "text.txt" contacts4
-  printContacts contacts4
-
-
-
-fun = do
-   print("hello")
+  let m = readContacts "text.txt"
+  map printContacts m
+  print("hello")
